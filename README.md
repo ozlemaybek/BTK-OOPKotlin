@@ -80,11 +80,13 @@
 
 > PrivateArtist sınıfının objeleri Artist sınıfı objelerinin yapabildiği her şeyi yapabilir ama Artist sınıfı objeleri PrivateArtist sınıfı objelerinin ek özelliklerini yapamaz. 
 
-## POLYMORPHISM
+## POLYMORPHISM (ÇOK BİÇİMLİLİK)
 
 > Farklı özelliklerin farklı çeşit ve farklı formlarla karşımıza çıkması olarak adlandırılır. 
 
 > 2 çeşiti var. 1) static polymorphism 2) dinamic polymorphism
+
+> Aynı sınıf içerisinde aynı isimle farklı işlemler yapmaya static polymorphism denir. Farklı sınıflar içerisinden aynı isimle farklı işlemler yapmaya ise dynamic polymorphism denir.
 
 - Static Polymorphism
 
@@ -102,19 +104,60 @@
 
 ![image](https://user-images.githubusercontent.com/109730490/184356221-620457d3-517a-4aed-a25f-c80f65e1daa8.png)
 
-> super anahtar kelimesi:
+> SUPER ANAHTAR KELİMESİ
 
 ![image](https://user-images.githubusercontent.com/109730490/184357275-88789b01-677c-422b-add5-3cd1dc265a34.png)
 
 ![image](https://user-images.githubusercontent.com/109730490/184357374-fc795a81-06ef-45fc-92ab-b398cb237120.png)
 
+## ABSTRACTION (SOYUTLAMA) && INTERFACE (ARAYÜZ)
 
+> Abstract Class; kendisinden bir obje oluşturulamayan sınıftır. 
 
+> Bir sınıf oluşturmak ve o sınıfın özelliklerini birden fazla yerde kullanmak isteyebiliriz. Diyelimki benim projede çok fazla sınıfım var ve ben hepsine bir özellik eklemek istedim. Tek tek gidip tüm sınıflara özellik eklemek yerine bir tane abstract class yazarım bu abstract class'tan bir obje oluşturulmasına gerek kalmaz ama diğer tüm sınıflar abstract class'tan kalıtım alır. 
 
+> Bir abstract class tanımlayalım:
 
+![image](https://user-images.githubusercontent.com/109730490/184361105-8f45068d-dc60-492b-844d-335d50d2d71e.png)
 
+> User class'ı Human sınıfından inheritance alsın:
 
+![image](https://user-images.githubusercontent.com/109730490/184361188-6392bfec-afe3-4d3a-866c-45864ebb5790.png)
+
+> Bu kez bizden class User : Human() şeklinde parantez açmamızı istemedi çünkü parantez açmak aslında obje oluşturulması demek. Ve abstract class'tan obje oluşturamayız.  
+
+> Şimdi abstract class'ta tanımladığımız fonksiyonu kullanalım:
+
+![image](https://user-images.githubusercontent.com/109730490/184361442-63eeff94-7295-4f36-a91b-d2e3d1815f08.png)
+
+-------------
+
+> Interface; bir sınıf değildir. Aslında interface %100 soyut bir sınıftır yani Interface'tende obje oluşturamayız. Ama bize sağladığı bir avantaj vardır.  
+
+> Interface ile ilgili detayları öğrenmek için Guitar isimli bir sınıf açtık. 
+
+> Class'lar birden fazla sınıftan kalıtım alamazlar. Ama birden fazla Interface kullanabiliriz. 
+
+> Instrument isimli bir Interface oluşturduk.
+
+![image](https://user-images.githubusercontent.com/109730490/184363822-2a983fd2-3dfd-4cac-b9fd-7f93c2f53bf8.png)
+
+> Yukarıdaki durum Kotlin'e özeldir. Java'da interface'ler farklı durumlara sahiptir. 
+
+> Interface içinde fonksiyonları böyle oluşturuyoruz. Normalde başka bir yerde bu kod hata verir:
+
+![image](https://user-images.githubusercontent.com/109730490/184365043-046742d1-10bf-4438-b9da-a0b3b3d12efe.png)
+
+> Bir class'a interfacelerden inheritance yaptığımızda alt enter ile implement members yapmamız gerekir:
+
+![image](https://user-images.githubusercontent.com/109730490/184365541-7066295b-4039-4743-ad64-30fa29340c76.png)
+
+## LAMBDA GÖSTERİMLERİ (LAMBDA EXPRESSİONS)
+
+![image](https://user-images.githubusercontent.com/109730490/184368753-3590df13-1f22-4c1c-8208-ee1d7dfa5e7b.png)
 
 ## Kaynaklar
 
 - [BTK Akademi](https://www.btkakademi.gov.tr/portal/course/kotlin-ile-android-mobil-uygulama-gelistirme-ileri-seviye-10359)
+
+- [Medium](https://mebaysan.medium.com/kotlin-ve-nesne-tabanl%C4%B1-programlama-oop-29ab98b5f43d#)
