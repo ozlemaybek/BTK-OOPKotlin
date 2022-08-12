@@ -152,7 +152,7 @@
 
 ![image](https://user-images.githubusercontent.com/109730490/184365541-7066295b-4039-4743-ad64-30fa29340c76.png)
 
-## LAMBDA GÖSTERİMLERİ (LAMBDA EXPRESSİONS)
+## LAMBDA GÖSTERİMLERİ (LAMBDA EXPRESSIONS)
 
 ![image](https://user-images.githubusercontent.com/109730490/184368753-3590df13-1f22-4c1c-8208-ee1d7dfa5e7b.png)
 
