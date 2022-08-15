@@ -1,6 +1,6 @@
 # BTK-OOPKotlin
 
-## Kotlin İle Android Mobil Uygulama Geliştirme İleri Seviye Notlarım
+## Kotlin İle Android Mobil Uygulama Geliştirme İleri Seviye (BTK AKADEMİ) Notlarım
 
 ## INIT VE CONSTRUCTOR
 
